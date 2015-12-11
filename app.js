@@ -107,48 +107,57 @@ function getNextData(res,$date){
     }, waitTime);
 }
 
+function makeFileName($url){
+    $urlparts = $url.split("/");
+    $filename = $urlparts[4]+"-"+$urlparts[5];
+    return $filename;
+}
+
 function getDataForEachGame($url,res,$date){
     if($url == undefined){
         return;
     }
+    $filename = makeFileName($url);
     //$url = "http://www.nba.com/games/20160104/TORCLE/gameinfo.html";
-    $urlparts = $url.split("/");
-    $filename = $urlparts[4]+"-"+$urlparts[5];
     res.write("<br>Requesting data for the game:"+$filename);
     request({headers: {
       'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
     },
     uri: $url}, function(err, response, body){
-        var self = this;
-        self.items = new Array();
         if(err && response.statusCode !== 200){console.log('Request error.');}
+        loadingJQueryToDownloadedHTML(body,res,$date,$filename);
+    });
+}
 
-        jsdom.env({
+function loadingJQueryToDownloadedHTML(body,res,$date,$filename){
+  jsdom.env({
             html: body,
             scripts: ['http://code.jquery.com/jquery-1.6.min.js'],
             done: function (err, window) {
                     res.write("...Data downloaded for the game...");
                     extractTableFromPage(window,res,$date,$filename);
                 }
-            });
-    });
+        });
+}
+function writeDataToFile($path,$data,res){
+      fs.writeFile($path,$data, function (err) {
+        if (err) return console.log(err);
+        res.write("Data written into the file.."+$filename+"...");
+        //res.write("<hr>");
+      });
 }
 
 function extractTableFromPage(window,res,$date,$filename){
     res.write("extracting play by play data...");
     var $ = window.jQuery;
     $body = $('body');
+    $path = 'data/fullhtml/'+$filename+'.html';
+    writeDataToFile($path,$('html').html(),res);
+
     if($body.find('div#nbaGIPBP table')[0]!==undefined){
       $table = $body.find('div#nbaGIPBP table')[0].outerHTML;
-      $filename = 'htmldata/'+$filename+'.html';
-      fs.writeFile($filename,$table, function (err) {
-        if (err) return console.log(err);
-        res.write("Data written into the file.."+$filename+"...");
-        console.log('Data written for file:'+$filename);
-        res.write("Done!!!");
-        //res.write("<hr>");
-        //getNextData(res,$date);
-      }); 
+      $path = 'data/htmldata/'+$filename+'.html';
+      writeDataToFile($path,$table,res); 
     }
     else{
         totalGames--;
