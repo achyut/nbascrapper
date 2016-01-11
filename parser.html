@@ -1,0 +1,98 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<script>
+	$(document).ready(function(){
+	   var data = 
+       $.getJSON("/getdata", function(json) {
+          //  console.log(json); // this will show the info it in firebug console
+            var timesregex = /[0-9][0-9]:[0-9][0-9]*/g;
+            var newarr = [];
+            var table = "";
+            $.each(json,function(i,item){
+                var $ts = "";
+                var $ac = "";
+                var $at = "";
+                var $evn = "";
+                $.each(item,function(j,item1){
+                    //console.log(item1);
+                    
+                    item1 = $.trim(item1);
+                    if(item1.match(timesregex)){
+                        var time = item1.split(" ");
+                        var timestamp = time[0];
+                        $ts = timestamp;
+                        //console.log(timestamp);
+                    }
+                    else{
+                        //if(item1.match(/:/)){
+                            var linearr = item1.split(" ");
+                            $ac = linearr[0];
+                            if(linearr[1]==="Rebound"){
+                                $at = item1.substr(item1.indexOf(" ") + 1);
+                                $evn = "";
+                            }
+                            else if(linearr[1]==="Free"){
+                                $at1 = item1.substr(item1.indexOf(" ") + 1);
+                                $evn  = $at1.substr($at1.indexOf(" ") + 6);
+                                $at = "Free Throw";
+                                console.log($evn);
+                            }
+                            else if(linearr[1]==="Substitution"){
+                                $at1 = item1.substr(item1.indexOf(" ") + 1);
+                                $evn  = $at1.substr($at1.indexOf(" ") + 1);
+                                $at = "Substitution";
+                                
+                            }
+                            else{
+                                var action = item1.split(/:/);
+                                $at = action[0];
+                                $at = $at.substr($at.indexOf(" ") + 1);
+                                if(item1.match(/Assist/)){
+                                    $evn = action[1]+action[2];    
+                                }
+                                else{
+                                    $evn = action[1];
+                                //    console.log($evn);
+                                }           
+                            }
+                        }
+
+
+                     //   console.log(item1);
+                    //}
+                    
+                    
+                }); 
+                if($evn===undefined){
+                    $evn ="";
+                }
+                var obj = {
+                    timestamp:$ts,
+                    actor:$ac,
+                    action:$at,
+                    evnt:$evn
+                }
+                newarr.push(obj);
+               // table+="<tr><td>"+$ts+"</td><td>"+$ac+"</td><td>"+$at+"</td><td>"+$evn+"</td><td>"+item1+"</td></tr>";
+                table+="<tr><td>"+$ts+"</td><td>"+$ac+"</td><td>"+$at+"</td><td>"+$evn+"</td><td></td></tr>";
+            });
+            $("table#data tbody").html(table);
+           // console.log(newarr);
+        })
+	});
+</script>
+<body>
+    <table id='data'>
+        <thead>
+            <td>Timestamp</td>
+            <td>Actor</td>
+            <td>Action</td>
+            <td>Event</td>
+            <td>Text</td>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
