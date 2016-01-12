@@ -10,11 +10,19 @@ var jsdom = require('jsdom')
 
 var router = Router()
 
-var waitTime = 2000 //time in millisecond
+var waitTime = 7000 //time in millisecond
+
+var dates = getDateRange();
+
+var queue = [];
+var totalGames = 0;
+//queue.push(2);         // queue is now [2]
+//queue.push(5);         // queue is now [2, 5]
+//var i = queue.shift(); // queue is now [5]
 
 function getDateRange(){
     var startdate = moment('2016-01-01');
-    var enddate = moment('2013-06-01');
+   // var enddate = moment('2016-01-07');
     var enddate = moment(new Date());
     var dates = [];
     for (var m = startdate; m.isBefore(enddate); m.add(1,'days')) {
@@ -28,10 +36,13 @@ router.get('/', function (req, res) {
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.setHeader('Connection', 'Transfer-Encoding');
   res.setHeader('Transfer-Encoding', 'chunked');
-  res.write("Scraping nba data...<hr>");
-  var dates = getDateRange();
  // console.log(dates);
-  getScrapInInterval(dates,res);
+  //getScrapInInterval(dates,res);
+  getNextData(res,"");
+
+  /*if(dates.length>0){
+    getGameLinks(dates.shift(),res);  
+  }*/
   //getGameDetailLinks(date,res);
   //res.end("Done");
 })
@@ -39,7 +50,7 @@ router.get('/', function (req, res) {
 function getScrapInInterval($dates,res){
   var c = 0;
   var timeout = setInterval(function() {
-    getGameDetailLinks($dates[c],res);
+    getGameLinks($dates[0],res);
     c++;
     if (c > $dates.length) {
       clearInterval(timeout);
@@ -47,21 +58,10 @@ function getScrapInInterval($dates,res){
   }, waitTime);
 }
 
-router.get('/parsedata', function (req, res) {
-	fs.readFile('./parser.html', function (err, html) {
-        if (err) {
-            throw err; 
-        } 
-        res.writeHeader(200, {"Content-Type": "text/html"});  
-        res.write(html);  
-        res.end();
 
-    });
-})
-
-function getGameDetailLinks($date,res){
+function getGameLinks($date,res){
     //var $date = "20160107";
-    res.write("Getting all games for date "+$date+"...");
+    res.write("<hr>Requesting games for date "+$date+"...");
     var headers = {'headers': {
       'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
       }
@@ -85,43 +85,49 @@ function parseDetailLinks(window,res,$date){
     var $ = window.jQuery;
     $title = $('title');
     if ($title.text().indexOf("Page Not Found") < 0){
-        var finallinks = [];
         $body = $('body')
         $links = $body.find('a.recapAnc');
         res.write($links.length+" games found...");
         $links.each(function (i, item) {
             var link = $(item).attr("href");
             link ='http://nba.com'+link;
-            finallinks.push(link);
+            queue.push(link);
+            totalGames++;
         });
-        getData(finallinks,res,$date);
+        //getNextData(res,$date);    
     }
     else{
         res.write("..Games not found for the day.");
         console.log("Data not found for date: "+$date);
-    }
-    return finallinks; 
+    } 
 }
 
-function getData($urls,res,$date){
-    var c = 0;
+function getNextData(res,$date){
     var timeout = setInterval(function() {
-    getDataForEachGame($urls[c],res,$date);
-    c++;
-    if (c > $urls.length) {
-      clearInterval(timeout);
-    }
+      if(queue.length>0){
+        getDataForEachGame(queue.shift(),res,$date);  
+      }
+      else{
+        if(dates.length>0){
+          getGameLinks(dates.shift(),res);  
+        }
+        else{
+            clearInterval(timeout);
+            res.end("<hr>"+totalGames+" Games data downloaded...Done with scrapping!!!");
+        }
+      }
+      
     }, waitTime);
 }
 function getDataForEachGame($url,res,$date){
-    console.log($url);
+    //console.log($url);
     if($url == undefined){
         return;
     }
     //$url = "http://www.nba.com/games/20160104/TORCLE/gameinfo.html";
     $urlparts = $url.split("/");
     $filename = $urlparts[4]+"-"+$urlparts[5];
-    res.write("Getting data for the game:"+$filename);
+    res.write("<br>Requesting data for the game:"+$filename);
     request({headers: {
       'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
     },
@@ -156,7 +162,8 @@ function extractTableFromPage(window,res,$date,$filename){
       res.write("Data written into the file.."+$filename+"...");
       console.log('Data written for file:'+$filename);
       res.write("Done!!!");
-      res.write("<hr>");
+      //res.write("<hr>");
+      //getNextData(res,$date);
     });
     
 }
@@ -192,6 +199,20 @@ function extractDataFromPage(window,res,$date,$filename){
     //console.log(self.items);
     
 }
+
+
+router.get('/parsedata', function (req, res) {
+  fs.readFile('./parser.html', function (err, html) {
+        if (err) {
+            throw err; 
+        } 
+        res.writeHeader(200, {"Content-Type": "text/html"});  
+        res.write(html);  
+        res.end();
+
+    });
+})
+
 
 var server = http.createServer(function(req, res) {
   router(req, res, finalhandler(req, res))
