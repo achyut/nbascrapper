@@ -1,6 +1,11 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style type="text/css">
+    thead td{
+        font-weight: bold;
+    }
+</style>
 </head>
 <script>
 	$(document).ready(function(){
@@ -15,6 +20,9 @@
                 var $ac = "";
                 var $at = "";
                 var $evn = "";
+                if(i<4){
+                    return true;
+                }
                 $.each(item,function(j,item1){
                     //console.log(item1);
                     
@@ -37,7 +45,7 @@
                                 $at1 = item1.substr(item1.indexOf(" ") + 1);
                                 $evn  = $at1.substr($at1.indexOf(" ") + 6);
                                 $at = "Free Throw";
-                                console.log($evn);
+                              //  console.log($evn);
                             }
                             else if(linearr[1]==="Substitution"){
                                 $at1 = item1.substr(item1.indexOf(" ") + 1);
