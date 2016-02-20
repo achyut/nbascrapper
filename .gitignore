@@ -1,3 +1,5 @@
+pythonscrapper/boxscore/*
+pythonscrapper/playbyplay/*
 htmldata/
 data/
 node_modules/

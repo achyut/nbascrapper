@@ -1,0 +1,7 @@
+play by play:
+http://stats.nba.com/stats/playbyplayv2?EndPeriod=10&GameID=0029900823&StartPeriod=1&StartRange=0
+
+box score:
+http://stats.nba.com/stats/boxscoresummaryv2?GameID=0029900423
+
+

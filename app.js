@@ -9,6 +9,7 @@ var request         = require('request');
 var url             = require('url');
 
 var router = Router()
+var a = 10;
 
 var waitTime = 7000 //time in millisecond
 
@@ -23,6 +24,7 @@ router.get('/', function (req, res) {
   res.setHeader('Connection', 'Transfer-Encoding');
   res.setHeader('Transfer-Encoding', 'chunked');
   getNextData(res,"");
+
 })
 
 router.get('/parsedata', function (req, res) {
@@ -36,8 +38,12 @@ router.get('/parsedata', function (req, res) {
     });
 })
 
+function writeCurrentTime(res){
+  res.write(moment(new Date()).toString());
+}
+
 function getDateRange(){
-    var startdate = moment('2016-01-01');
+    var startdate = moment('2016-02-07');
    // var enddate = moment('2016-01-07');
     var enddate = moment(new Date());
     var dates = [];
@@ -49,6 +55,7 @@ function getDateRange(){
 
 function getGameLinks($date,res){
     //var $date = "20160107";
+    writeCurrentTime(res);
     res.write("<hr>Requesting games for date "+$date+"...");
     var headers = {'headers': {
       'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
@@ -74,7 +81,17 @@ function parseDetailLinks(window,res,$date){
     $title = $('title');
     if ($title.text().indexOf("Page Not Found") < 0){
         $body = $('body')
-        $links = $body.find('a.recapAnc');
+        $links = $body.find('div.nbaFnlMnRecapDiv a')
+        
+        res.write($links.length+" games found...");
+        $links.each(function (i, item) {
+            var link = $(item).attr("href");
+            link ='http://nba.com'+link;
+            queue.push(link);
+            totalGames++;
+        });
+
+	      $links = $body.find('a.recapAnc');
         res.write($links.length+" games found...");
         $links.each(function (i, item) {
             var link = $(item).attr("href");
@@ -124,7 +141,7 @@ function getDataForEachGame($url,res,$date){
       'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
     },
     uri: $url}, function(err, response, body){
-        if(err && response.statusCode !== 200){console.log('Request error.');}
+        if(err && response!=  undefined && response.statusCode !== 200){console.log('Request error.');}
         loadingJQueryToDownloadedHTML(body,res,$date,$filename);
     });
 }
