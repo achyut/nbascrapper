@@ -1,5 +1,8 @@
+**/__pycache__/**
+pythonscrapper/myconfig.py
 pythonscrapper/boxscore/*
 pythonscrapper/playbyplay/*
+pythonscrapper/daydata/*
 htmldata/
 data/
 node_modules/
