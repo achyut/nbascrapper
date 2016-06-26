@@ -1,0 +1,568 @@
+WARNING:root:#############################################################
+INFO:root:#############################################################
+INFO:root:#############################################################
+INFO:urllib3.connectionpool:Starting new HTTP connection (1): stats.nba.com
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 3 found for the date: 12/3/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_3.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:15:31----
+INFO:root:-- Downloading boxscore for gameid 0020900271 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-03_0020900271.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:15:36----
+INFO:root:-- Downloading play by play data for gameid 0020900271
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-03_0020900271.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:15:41----
+INFO:root:-- Downloading boxscore for gameid 0020900270 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-03_0020900270.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:15:46----
+INFO:root:-- Downloading play by play data for gameid 0020900270
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-03_0020900270.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:15:51----
+INFO:root:-- Downloading boxscore for gameid 0020900269 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-03_0020900269.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:15:56----
+INFO:root:-- Downloading play by play data for gameid 0020900269
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-03_0020900269.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:urllib3.connectionpool:Starting new HTTP connection (2): stats.nba.com
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 10 found for the date: 12/4/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_4.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:11----
+INFO:root:-- Downloading boxscore for gameid 0020900281 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900281.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:16----
+INFO:root:-- Downloading play by play data for gameid 0020900281
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900281.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 9 found for the date: 12/5/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_5.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:21----
+INFO:root:-- Downloading boxscore for gameid 0020900290 
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:26----
+INFO:root:-- Downloading play by play data for gameid 0020900290
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900290.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900290.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:31----
+INFO:root:-- Downloading boxscore for gameid 0020900289 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900289.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:36----
+INFO:root:-- Downloading play by play data for gameid 0020900289
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900289.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:41----
+INFO:root:-- Downloading boxscore for gameid 0020900288 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900288.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:46----
+INFO:root:-- Downloading play by play data for gameid 0020900288
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900288.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:51----
+INFO:root:-- Downloading boxscore for gameid 0020900287 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900287.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:16:56----
+INFO:root:-- Downloading play by play data for gameid 0020900287
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900287.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:01----
+INFO:root:-- Downloading boxscore for gameid 0020900286 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900286.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:06----
+INFO:root:-- Downloading play by play data for gameid 0020900286
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900286.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:11----
+INFO:root:-- Downloading boxscore for gameid 0020900285 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900285.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:16----
+INFO:root:-- Downloading play by play data for gameid 0020900285
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900285.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:21----
+INFO:root:-- Downloading boxscore for gameid 0020900284 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900284.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:26----
+INFO:root:-- Downloading play by play data for gameid 0020900284
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900284.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:31----
+INFO:root:-- Downloading boxscore for gameid 0020900283 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900283.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:36----
+INFO:root:-- Downloading play by play data for gameid 0020900283
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900283.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:41----
+INFO:root:-- Downloading boxscore for gameid 0020900282 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-05_0020900282.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:46----
+INFO:root:-- Downloading play by play data for gameid 0020900282
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-05_0020900282.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:51----
+INFO:root:-- Downloading boxscore for gameid 0020900280 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900280.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:17:56----
+INFO:root:-- Downloading play by play data for gameid 0020900280
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900280.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:01----
+INFO:root:-- Downloading boxscore for gameid 0020900279 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900279.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:06----
+INFO:root:-- Downloading play by play data for gameid 0020900279
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900279.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:11----
+INFO:root:-- Downloading boxscore for gameid 0020900278 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900278.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:16----
+INFO:root:-- Downloading play by play data for gameid 0020900278
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900278.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:21----
+INFO:root:-- Downloading boxscore for gameid 0020900277 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900277.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:26----
+INFO:root:-- Downloading play by play data for gameid 0020900277
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900277.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:31----
+INFO:root:-- Downloading boxscore for gameid 0020900276 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900276.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:36----
+INFO:root:-- Downloading play by play data for gameid 0020900276
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900276.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:41----
+INFO:root:-- Downloading boxscore for gameid 0020900275 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900275.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:46----
+INFO:root:-- Downloading play by play data for gameid 0020900275
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900275.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:51----
+INFO:root:-- Downloading boxscore for gameid 0020900274 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900274.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:18:56----
+INFO:root:-- Downloading play by play data for gameid 0020900274
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900274.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:01----
+INFO:root:-- Downloading boxscore for gameid 0020900273 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900273.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:06----
+INFO:root:-- Downloading play by play data for gameid 0020900273
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900273.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:11----
+INFO:root:-- Downloading boxscore for gameid 0020900272 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900272.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:16----
+INFO:root:-- Downloading play by play data for gameid 0020900272
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900272.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 5 found for the date: 12/6/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_6.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:26----
+INFO:root:-- Downloading boxscore for gameid 0020900295 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-06_0020900295.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:31----
+INFO:root:-- Downloading play by play data for gameid 0020900295
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-06_0020900295.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:36----
+INFO:root:-- Downloading boxscore for gameid 0020900294 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-06_0020900294.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:41----
+INFO:root:-- Downloading play by play data for gameid 0020900294
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-06_0020900294.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:46----
+INFO:root:-- Downloading boxscore for gameid 0020900293 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-06_0020900293.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:51----
+INFO:root:-- Downloading play by play data for gameid 0020900293
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-06_0020900293.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:19:56----
+INFO:root:-- Downloading boxscore for gameid 0020900292 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-06_0020900292.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:01----
+INFO:root:-- Downloading play by play data for gameid 0020900292
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-06_0020900292.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:06----
+INFO:root:-- Downloading boxscore for gameid 0020900291 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-06_0020900291.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:11----
+INFO:root:-- Downloading play by play data for gameid 0020900291
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-06_0020900291.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 4 found for the date: 12/7/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_7.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:21----
+INFO:root:-- Downloading boxscore for gameid 0020900299 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-07_0020900299.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:26----
+INFO:root:-- Downloading play by play data for gameid 0020900299
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-07_0020900299.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:31----
+INFO:root:-- Downloading boxscore for gameid 0020900298 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-07_0020900298.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:36----
+INFO:root:-- Downloading play by play data for gameid 0020900298
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-07_0020900298.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:41----
+INFO:root:-- Downloading boxscore for gameid 0020900297 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-07_0020900297.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:46----
+INFO:root:-- Downloading play by play data for gameid 0020900297
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-07_0020900297.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:51----
+INFO:root:-- Downloading boxscore for gameid 0020900296 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-07_0020900296.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:20:56----
+INFO:root:-- Downloading play by play data for gameid 0020900296
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-07_0020900296.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 8 found for the date: 12/8/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_8.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 9 found for the date: 12/9/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_9.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:11----
+INFO:root:-- Downloading boxscore for gameid 0020900316 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900316.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:16----
+INFO:root:-- Downloading play by play data for gameid 0020900316
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900316.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:21----
+INFO:root:-- Downloading boxscore for gameid 0020900315 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900315.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:26----
+INFO:root:-- Downloading play by play data for gameid 0020900315
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900315.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:31----
+INFO:root:-- Downloading boxscore for gameid 0020900314 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900314.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:36----
+INFO:root:-- Downloading play by play data for gameid 0020900314
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900314.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:41----
+INFO:root:-- Downloading boxscore for gameid 0020900313 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900313.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:46----
+INFO:root:-- Downloading play by play data for gameid 0020900313
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900313.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:51----
+INFO:root:-- Downloading boxscore for gameid 0020900312 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900312.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:21:56----
+INFO:root:-- Downloading play by play data for gameid 0020900312
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900312.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:01----
+INFO:root:-- Downloading boxscore for gameid 0020900311 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900311.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:06----
+INFO:root:-- Downloading play by play data for gameid 0020900311
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900311.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:11----
+INFO:root:-- Downloading boxscore for gameid 0020900310 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900310.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:16----
+INFO:root:-- Downloading play by play data for gameid 0020900310
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900310.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:21----
+INFO:root:-- Downloading boxscore for gameid 0020900309 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900309.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:26----
+INFO:root:-- Downloading play by play data for gameid 0020900309
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900309.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:31----
+INFO:root:-- Downloading boxscore for gameid 0020900308 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-09_0020900308.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:15:26-----current time: 2016-05-30 18:22:36----
+INFO:root:-- Downloading play by play data for gameid 0020900308
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-09_0020900308.json
+INFO:root:-----------------------------------------------------------------------------------------------
+WARNING:root:#############################################################
+INFO:root:#############################################################
+INFO:root:#############################################################
+INFO:urllib3.connectionpool:Starting new HTTP connection (1): stats.nba.com
+INFO:urllib3.connectionpool:Starting new HTTP connection (2): stats.nba.com
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 3 found for the date: 12/3/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_3.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- 10 found for the date: 12/4/2009
+INFO:root:-- File written sucessfully!!! for filename daydata/2009_12_4.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:22:41-----current time: 2016-05-30 18:22:51----
+INFO:root:-- Downloading boxscore for gameid 0020900281 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900281.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:22:41-----current time: 2016-05-30 18:22:56----
+INFO:root:-- Downloading play by play data for gameid 0020900281
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900281.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:22:41-----current time: 2016-05-30 18:23:01----
+INFO:root:-- Downloading boxscore for gameid 0020900280 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900280.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:22:41-----current time: 2016-05-30 18:23:06----
+INFO:root:-- Downloading play by play data for gameid 0020900280
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900280.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:22:41-----current time: 2016-05-30 18:23:11----
+INFO:root:-- Downloading boxscore for gameid 0020900279 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900279.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:22:41-----current time: 2016-05-30 18:23:16----
+INFO:root:-- Downloading play by play data for gameid 0020900279
+INFO:root:-- File written sucessfully!!! for filename playbyplay/2009-12-04_0020900279.json
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:-----------------------------------------------------------------------------------------------
+INFO:root:-- Process start time: 2016-05-30 18:22:41-----current time: 2016-05-30 18:23:21----
+INFO:root:-- Downloading boxscore for gameid 0020900278 
+INFO:root:-- File written sucessfully!!! for filename boxscore/2009-12-04_0020900278.json
+INFO:root:-----------------------------------------------------------------------------------------------

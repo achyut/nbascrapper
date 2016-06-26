@@ -1,16 +1,21 @@
+import sys
+sys.path.append('/usr/local/lib/python3.4/dist-packages')
+
+sys.path.append('/home1/04010/ishwor/.local/lib/python2.6/site-packages')
+
 from twilio.rest import TwilioRestClient
 import smtplib
 import myconfig
-import sys
 
-def send_email(body):
+
+def send_email(subject,body):
     recipient = myconfig.recipient
     gmail_user = myconfig.gmail_user
     gmail_pwd = myconfig.gmail_pwd
     
     FROM = myconfig.FROM
     TO = recipient if type(recipient) is list else [recipient]
-    SUBJECT = "Error occured while downloading game data"
+    SUBJECT = subject
     TEXT = body
 
     # Prepare actual message
@@ -40,11 +45,15 @@ def send_sms(text):
     print("-- Sent sms notification")
 
 def notify_error(date,gameid,url):
-	message = "Error has occured downloading game for date: "+date+" the gameid: "+str(gameid)+" using url: "+url
-	notify_message(message)
+    subject = "Error occured while downloading game data"
+    message = "Error has occured downloading game for date: "+str(date)+" the gameid: "+str(gameid)+" using url: "+str(url)
+    notify_message(message)
 
-def notify_message(message):
-	send_email(message)
+def notify_message(subject,message):
+	send_email(subject,message)
 	#send_sms(message)	
 
-notify_message("Hello test")
+def notify_status(message):
+    subject = "Status report for the scrapper"
+    notify_message(subject,message)
+#notify_message("Hello test")
