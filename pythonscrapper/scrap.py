@@ -13,7 +13,7 @@ BASE_PATH = ""
 
 
 #format should be m-d-yyyy
-startdate = "12-02-2009"
+startdate = "10-30-1996"
 
 ERROR_CHECK_INTERVAL = 10
 MAX_RETRIES = 5
@@ -60,7 +60,7 @@ def getGameIds():
 		noofgame = len(data_dict['resultSets'][0]['rowSet'])
 		date = data_dict['parameters']['GameDate']
 		logging.info("-- "+str(noofgame)+" found for the date: "+str(date))
-		filename = BASE_PATH+"daydata/"+str(year)+"_"+str(month)+"_"+str(day)+".json"
+		filename = BASE_PATH+"daydata_scoreboard/"+str(year)+"_"+str(month)+"_"+str(day)+".json"
 		savedata(response.text,filename)
 		if noofgame > 0 :
 			dateobj = datetime.datetime.strptime(date, "%m/%d/%Y")
@@ -79,17 +79,22 @@ def loadUrls():
 	gameids = getGameIds()
 	for gameid in gameids:
 		playbyplay = 'http://stats.nba.com/stats/playbyplayv2?EndPeriod=10&GameID=%s&StartPeriod=1&StartRange=0' % gameid
-		boxscore = 'http://stats.nba.com/stats/boxscoresummaryv2?GameID=%s' % gameid
-		obj = []
-		obj.append('playbyplay')
-		obj.append(gameid)
-		obj.append(playbyplay)
-		urls.append(obj)
-		obj = []
-		obj.append('boxscore')
-		obj.append(gameid)
-		obj.append(boxscore)
-		urls.append(obj)
+		boxscore_summary = 'http://stats.nba.com/stats/boxscoresummaryv2?GameID=%s' % gameid
+		boxscore_traditional = "http://stats.nba.com/stats/boxscoretraditionalv2?EndPeriod=10&EndRange=28800&GameID="+gameid+"&RangeType=0&StartPeriod=1&StartRange=0"
+		boxscore_advanced = "http://stats.nba.com/stats/boxscoreadvancedv2?EndPeriod=10&EndRange=28800&GameID="+gameid+"&RangeType=0&StartPeriod=1&StartRange=0"
+		boxscore_misc = "http://stats.nba.com/stats/boxscoremiscv2?EndPeriod=10&EndRange=28800&GameID="+gameid+"&RangeType=0&StartPeriod=1&StartRange=0"
+		boxscore_scoring = "http://stats.nba.com/stats/boxscorescoringv2?EndPeriod=10&EndRange=28800&GameID="+gameid+"&RangeType=0&StartPeriod=1&StartRange=0"
+		boxscore_usage = "http://stats.nba.com/stats/boxscoreusagev2?EndPeriod=10&EndRange=28800&GameID="+gameid+"&RangeType=0&StartPeriod=1&StartRange=0"
+		boxscore_fourfactor = "http://stats.nba.com/stats/boxscorefourfactorsv2?EndPeriod=10&EndRange=28800&GameID="+gameid+"&RangeType=0&StartPeriod=1&StartRange=0"
+		#urls.append(['playbyplay',gameid,playbyplay])
+		urls.append(['boxscore_summary',gameid,boxscore_summary])
+		urls.append(['boxscore_traditional',gameid,boxscore_traditional])
+		urls.append(['boxscore_advanced',gameid,boxscore_advanced])
+		urls.append(['boxscore_misc',gameid,boxscore_misc])
+		urls.append(['boxscore_scoring',gameid,boxscore_scoring])
+		urls.append(['boxscore_usage',gameid,boxscore_usage])
+		urls.append(['boxscore_fourfactor',gameid,boxscore_fourfactor])
+
 		
 def elapsedmin():
 	end = time.time()
@@ -109,13 +114,13 @@ def download():
 		logging.info("-- Process start time: "+str(start)+"-----current time: "+str(currenttime)+"----")
 		if(len(urls)>0):
 			urlobj = urls.pop()
-			gametype = urlobj[0]
+			scoretype = urlobj[0]
 			gameid = urlobj[1]
 			url = urlobj[2]
-			if gametype is 'playbyplay':
+			if scoretype is 'playbyplay':
 				downloadPlayByPlay(gameid,url)
 			else:
-				downloadBoxScore(gameid,url)
+				downloadBoxScore(gameid,url,scoretype)
 
 def downloadPlayByPlay(gameid,url):
 	if gameid in gameidmapper:
@@ -133,8 +138,8 @@ def downloadPlayByPlay(gameid,url):
 			download()
 		gamemappersemaphore = False
 
-def downloadBoxScore(gameid,url):
-	logging.info("-- Downloading boxscore for gameid %s " % gameid+"")
+def downloadBoxScore(gameid,url,scoretype):
+	logging.info("-- Downloading boxscore of type "+scoretype+" for gameid %s " % gameid+"")
 	#response = http.request('GET',url)
 	gamemappersemaphore = True
 	response = session.get(url)
@@ -144,7 +149,7 @@ def downloadBoxScore(gameid,url):
 		# date = data_dict['resultSets'][0]['rowSet'][0][0]
 		# gameidmapper[gameid] = date
 		date = gameidmapper[gameid]
-		filename = BASE_PATH+"boxscore/"+date+"_"+str(gameid)+".json"
+		filename = BASE_PATH+"boxscore/"+scoretype+"/"+date+"_"+str(gameid)+".json"
 		savedata(response.text,filename)
 		return True
 	else:
@@ -153,16 +158,18 @@ def downloadBoxScore(gameid,url):
 		download()
 		return False
 	gamemappersemaphore = False
-	
-def savedata(data,filename):
-        file = open(filename, 'w')
-        file.write(data)
-        file.close()
-        logging.info("-- File written sucessfully!!! for filename "+filename)
-        logging.info("-----------------------------------------------------------------------------------------------")
-        global lastwritten
-        lastwritten = datetime.datetime.now()
 
+
+def savedata(data,filename):
+		#os.makedirs(os.path.dirname(filename),exist_ok=True)
+		file = open(filename, 'w')
+		file.write(data)
+		file.close()
+		logging.info("-- File written sucessfully!!! for filename "+filename)
+		logging.info("-----------------------------------------------------------------------------------------------")
+		global lastwritten
+		lastwritten = datetime.datetime.now()
+		
 #def printlog(log):
 
 # function to run scheduler
